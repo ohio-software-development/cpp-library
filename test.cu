@@ -7,8 +7,12 @@ using namespace std;
 
 int main() {
 
-    Matrix m(1000, 1000);
-    m.scalarMultiplication(2);
+    Matrix mat1 = oneMatrix(2, 2);
+    mat1.print();
+    Matrix mat2 = oneMatrix(2, 2);
+    mat2.print();
+    mat1.matrixMultiply(mat2);
+    mat1.print();
 
     exit(0);
 }
